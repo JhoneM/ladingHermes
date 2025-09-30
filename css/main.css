@@ -97,68 +97,57 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*======================================================
-  HERMES GEAR - CSS COMPLETO (Paleta Mármol/Dorado)
-  Estética: Lujo Minimalista, Clean Desk
-  Paleta: Blanco (#F0F0F0), Gris Carbón (#333333), Dorado (#A08C6D)
-========================================================*/
-
-/* 1. ESTILOS BASE Y RESPONSIVIDAD GENERAL */
 body {
-    background-color: #333333; /* Fondo Blanco Roto (Mármol) */
-    color: #333333; /* Gris Carbón para texto general */
+    background-color: #333333;
+    color: #333333;
     padding-top: 80px;
 }
 
-/* 2. TIPOGRAFÍA Y CLASES DE COLOR PERSONALIZADAS */
-
-/* Tipografía de títulos */
 .custom-title {
     font-family: 'Philosopher', serif;
     letter-spacing: 1px;
     font-weight: 700;
 }
 
-/* Tipografía del cuerpo de texto */
 .custom-body-text {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.7;
 }
 
-/* Color de acento Dorado Suave */
+.img-nav-bar {
+    height: 40px;
+    width: auto
+}
+
 .text-gold {
     color: #A08C6D !important;
 }
 
-/* Color Gris Carbón (para fondos de header/footer) */
+.text-bold {
+    font-weight: bold;
+}
+
 .bg-charcoal {
     background-color: #333333 !important;
 }
 
-/* Color Sombra/Separación (Gris Claro Frío) */
 .bg-light-separator {
     background-color: #D9D9D9 !important;
 }
 
-/* 3. BARRA DE NAVEGACIÓN (HEADER) */
-
 .navbar {
-    /* Navbar oscura sobre fondo claro para alto contraste */
-    background-color: #333333 !important; /* Gris Carbón */
+    background-color: #333333 !important;
 }
 
 .navbar-dark .navbar-brand, .navbar-dark .nav-link {
-    color: #F0F0F0; /* Texto blanco en navbar oscura */
+    color: #F0F0F0;
     font-weight: bold;
 }
 
 .navbar-dark .nav-link:hover {
-    color: #A08C6D; /* Efecto hover en color dorado */
+    color: #A08C6D;
 }
 
-/* 4. BOTONES Y CALL TO ACTIONS (CTAs) */
-
-/* Estilo de botón principal: borde y texto Dorado/Suave */
 .btn-outline-gold {
     border-color: #A08C6D;
     color: #A08C6D;
@@ -169,94 +158,78 @@ body {
 }
 
 .btn-outline-gold:hover {
-    background-color: #A08C6D; /* Relleno Dorado al pasar el mouse */
-    color: #F0F0F0; /* Texto blanco sobre fondo dorado */
+    background-color: #A08C6D;
+    color: #F0F0F0;
     border-color: #A08C6D;
 }
 
-/* 5. SECCIONES ESPECÍFICAS (FLUIDEZ DE FONDO) */
-
-/* Sección Hero (#inicio): Usa el fondo oscuro de la antigua hero para el contraste */
 #inicio {
-    background-color: #333333 !important; /* Gris Carbón */
-    color: #F0F0F0; /* Texto claro */
-    /* ... Las propiedades de background-image, position, etc. se mantienen si las usas ... */
+    background-color: #333333 !important;
+    color: #F0F0F0;
+}
+
+.img-index {
+    max-height: 700px;
 }
 
 #inicio .custom-title {
-    color: #A08C6D !important; /* Título Dorado */
+    color: #A08C6D !important;
 }
 
-/* Sección Propuesta (#features) y Contacto: Usa un fondo claro (Blanco) */
 #features, #contacto {
     background-color: #F0F0F0 !important;
-    color: #333333 !important; /* Texto oscuro sobre fondo claro */
+    color: #333333 !important;
+    scroll-margin-top: 80px;
+}
+
+#comments {
+    scroll-margin-top: 50px;
 }
 
 #features h4, #features p {
-    color: #333333 !important; /* Fuerza texto oscuro en la Propuesta */
+    color: #333333 !important;
 }
 
-/* Sección Nosotros (#nosotros) y Productos: Usa Gris Claro de Separación */
 #nosotros, .bg-secondary {
-    background-color: #D9D9D9 !important; /* Gris Claro para el contraste */
-    color: #333333 !important; /* Texto oscuro sobre fondo claro */
+    background-color: #D9D9D9 !important;
+    color: #333333 !important;
 }
 
 #nosotros h2 {
-    color: #A08C6D !important; /* Título Dorado */
+    color: #A08C6D !important;
 }
 
-/* 6. TARJETAS DE PRODUCTOS (Resaltan en fondo claro) */
-
 .card {
-    background-color: #F0F0F0; /* Tarjetas Blancas */
-    border: 1px solid #D9D9D9 !important; /* Borde muy sutil */
+    background-color: #F0F0F0;
+    border: 1px solid #D9D9D9 !important;
 }
 
 .card h5, .card p {
-    color: #333333 !important; /* Texto oscuro en las tarjetas */
+    color: #333333 !important;
 }
 
-/* 7. FORMULARIO DE CONTACTO (contacto.html) */
-
-/* El fondo del formulario debe ser Gris Carbón para resaltar */
 .bg-midnight {
     background-color: #333333 !important;
 }
 
-/* Estilo para los campos de entrada */
 .form-control, .form-select {
-    background-color: #F0F0F0; /* Fondo blanco para escribir */
-    border: 1px solid #A08C6D; /* Borde Dorado */
-    color: #333333; /* Texto oscuro al escribir */
-}
-
-/* Efecto focus */
-.form-control:focus, .form-select:focus {
     background-color: #F0F0F0;
-    border-color: #A08C6D;
-    box-shadow: 0 0 0 0.25rem rgba(160, 140, 109, 0.4); /* Sombra suave dorada */
+    border: 1px solid #A08C6D;
     color: #333333;
 }
 
-/* 8. FOOTER */
-
-footer {
-    border-top: 2px solid #A08C6D; /* Borde Dorado de acento */
-    background-color: #333333; /* Gris Carbón */
-    color: #F0F0F0 !important;
+.form-control:focus, .form-select:focus {
+    background-color: #F0F0F0;
+    border-color: #A08C6D;
+    box-shadow: 0 0 0 0.25rem rgba(160, 140, 109, 0.4);
+    color: #333333;
 }
 
-/* ... Media Queries se mantienen igual ... */
-
-
-
-
-
-
-
-
+footer {
+    border-top: 2px solid #A08C6D;
+    background-color: #333333;
+    color: #F0F0F0 !important;
+}
 
 
 
