@@ -1,0 +1,451 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*======================================================
+  HERMES GEAR - CSS COMPLETO (Paleta Mármol/Dorado)
+  Estética: Lujo Minimalista, Clean Desk
+  Paleta: Blanco (#F0F0F0), Gris Carbón (#333333), Dorado (#A08C6D)
+========================================================*/
+
+/* 1. ESTILOS BASE Y RESPONSIVIDAD GENERAL */
+body {
+    background-color: #333333; /* Fondo Blanco Roto (Mármol) */
+    color: #333333; /* Gris Carbón para texto general */
+    padding-top: 80px;
+}
+
+/* 2. TIPOGRAFÍA Y CLASES DE COLOR PERSONALIZADAS */
+
+/* Tipografía de títulos */
+.custom-title {
+    font-family: 'Philosopher', serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Tipografía del cuerpo de texto */
+.custom-body-text {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.7;
+}
+
+/* Color de acento Dorado Suave */
+.text-gold {
+    color: #A08C6D !important;
+}
+
+/* Color Gris Carbón (para fondos de header/footer) */
+.bg-charcoal {
+    background-color: #333333 !important;
+}
+
+/* Color Sombra/Separación (Gris Claro Frío) */
+.bg-light-separator {
+    background-color: #D9D9D9 !important;
+}
+
+/* 3. BARRA DE NAVEGACIÓN (HEADER) */
+
+.navbar {
+    /* Navbar oscura sobre fondo claro para alto contraste */
+    background-color: #333333 !important; /* Gris Carbón */
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .nav-link {
+    color: #F0F0F0; /* Texto blanco en navbar oscura */
+    font-weight: bold;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #A08C6D; /* Efecto hover en color dorado */
+}
+
+/* 4. BOTONES Y CALL TO ACTIONS (CTAs) */
+
+/* Estilo de botón principal: borde y texto Dorado/Suave */
+.btn-outline-gold {
+    border-color: #A08C6D;
+    color: #A08C6D;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-gold:hover {
+    background-color: #A08C6D; /* Relleno Dorado al pasar el mouse */
+    color: #F0F0F0; /* Texto blanco sobre fondo dorado */
+    border-color: #A08C6D;
+}
+
+/* 5. SECCIONES ESPECÍFICAS (FLUIDEZ DE FONDO) */
+
+/* Sección Hero (#inicio): Usa el fondo oscuro de la antigua hero para el contraste */
+#inicio {
+    background-color: #333333 !important; /* Gris Carbón */
+    color: #F0F0F0; /* Texto claro */
+    /* ... Las propiedades de background-image, position, etc. se mantienen si las usas ... */
+}
+
+#inicio .custom-title {
+    color: #A08C6D !important; /* Título Dorado */
+}
+
+/* Sección Propuesta (#features) y Contacto: Usa un fondo claro (Blanco) */
+#features, #contacto {
+    background-color: #F0F0F0 !important;
+    color: #333333 !important; /* Texto oscuro sobre fondo claro */
+}
+
+#features h4, #features p {
+    color: #333333 !important; /* Fuerza texto oscuro en la Propuesta */
+}
+
+/* Sección Nosotros (#nosotros) y Productos: Usa Gris Claro de Separación */
+#nosotros, .bg-secondary {
+    background-color: #D9D9D9 !important; /* Gris Claro para el contraste */
+    color: #333333 !important; /* Texto oscuro sobre fondo claro */
+}
+
+#nosotros h2 {
+    color: #A08C6D !important; /* Título Dorado */
+}
+
+/* 6. TARJETAS DE PRODUCTOS (Resaltan en fondo claro) */
+
+.card {
+    background-color: #F0F0F0; /* Tarjetas Blancas */
+    border: 1px solid #D9D9D9 !important; /* Borde muy sutil */
+}
+
+.card h5, .card p {
+    color: #333333 !important; /* Texto oscuro en las tarjetas */
+}
+
+/* 7. FORMULARIO DE CONTACTO (contacto.html) */
+
+/* El fondo del formulario debe ser Gris Carbón para resaltar */
+.bg-midnight {
+    background-color: #333333 !important;
+}
+
+/* Estilo para los campos de entrada */
+.form-control, .form-select {
+    background-color: #F0F0F0; /* Fondo blanco para escribir */
+    border: 1px solid #A08C6D; /* Borde Dorado */
+    color: #333333; /* Texto oscuro al escribir */
+}
+
+/* Efecto focus */
+.form-control:focus, .form-select:focus {
+    background-color: #F0F0F0;
+    border-color: #A08C6D;
+    box-shadow: 0 0 0 0.25rem rgba(160, 140, 109, 0.4); /* Sombra suave dorada */
+    color: #333333;
+}
+
+/* 8. FOOTER */
+
+footer {
+    border-top: 2px solid #A08C6D; /* Borde Dorado de acento */
+    background-color: #333333; /* Gris Carbón */
+    color: #F0F0F0 !important;
+}
+
+/* ... Media Queries se mantienen igual ... */
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
