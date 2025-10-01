@@ -231,6 +231,35 @@ footer {
     color: #F0F0F0 !important;
 }
 
+.card-img-fixed {
+    height: 180px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-body .flex-grow-1 {
+    flex-grow: 1;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #C5A56A !important;
+    border-color: #C5A56A !important;
+    color: white !important;
+}
+
+.pagination .page-item:not(.active) .page-link:hover {
+    background-color: #f0f0f0;
+    color: #C5A56A;
+}
+
+
 
 
 /* ==========================================================================
